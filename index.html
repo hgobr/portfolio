@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="nav.js" defer></script>
+    <title>Hugo Brothier</title>
+  </head>
+
+  <body class="home">
+    <header class="mainHeader">
+      <div class="wrapNav">
+        <div class="wrapLogo">
+          <img src="./medias/dev.png" alt="logo" class="logo" />
+          <span class="">HUGO BROTHIER</span>
+        </div>
+
+        <button
+          class="mobileNavButton"
+          aria-controls="mainNav"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+          <ul id="mainNav" dataVisible="false" class="mainNav">
+            <li class="active">
+              <a href=""><span aria-hidden="true">00</span>HOME</a>
+            </li>
+            <li>
+              <a href=""><span aria-hidden="true">01</span>PROJECTS</a>
+            </li>
+            <li>
+              <a href=""><span aria-hidden="true">02</span>ABOUT</a>
+            </li>
+            <li>
+              <a href=""><span aria-hidden="true">03</span>CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <h1>Hello, im Hugo</h1>
+    </header>
+  </body>
+</html>
