@@ -168,6 +168,14 @@ body {
   .mobileNavButton[aria-expanded='true'] {
     background-image: url(./medias/cross_128px.png);
   }
+
+  .wrapLogo {
+    margin-top: 0.75rem;
+  }
+
+  .textLogo {
+    display: none;
+  }
 }
 
 @media (min-width: 35em) and (max-width: 55em) {
@@ -185,12 +193,4 @@ body {
     padding-inline: clamp(3rem, 10vh, 10rem);
     gap: (1.5rem, 5vw, 3rem);
   }
-}
-
-.test > h1,
-p {
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin: 50px 180px;
 }
