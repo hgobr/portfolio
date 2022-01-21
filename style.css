@@ -26,7 +26,7 @@ body {
   border: 0;
 }
 
-/* main header */
+/* nav */
 
 .wrapNav {
   display: flex;
@@ -193,4 +193,10 @@ body {
     padding-inline: clamp(3rem, 10vh, 10rem);
     gap: (1.5rem, 5vw, 3rem);
   }
+}
+
+/* @header */
+
+header {
+  color: rgb(236, 236, 236);
 }

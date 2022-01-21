@@ -21,13 +21,12 @@
   </head>
 
   <body class="home">
-    <header class="mainHeader">
+    <nav>
       <div class="wrapNav">
         <div class="wrapLogo">
           <img src="./medias/hbicon01.png" alt="logo" class="logo" />
           <a href="index.html"><span class="textLogo">HUGO BROTHIER</span></a>
         </div>
-
         <button
           class="mobileNavButton"
           aria-controls="mainNav"
@@ -35,25 +34,28 @@
         >
           <span class="sr-only">Menu</span>
         </button>
-
-        <nav>
-          <ul id="mainNav" dataVisible="false" class="mainNav">
-            <li class="active">
-              <a href="#home"><span aria-hidden="true">00</span>HOME</a>
-            </li>
-            <li>
-              <a href="#projects"><span aria-hidden="true">01</span>PROJECTS</a>
-            </li>
-            <li>
-              <a href="#about"><span aria-hidden="true">02</span>ABOUT</a>
-            </li>
-            <li>
-              <a href="#contact"><span aria-hidden="true">03</span>CONTACT</a>
-            </li>
-            <div class="underline"></div>
-          </ul>
-        </nav>
+        <ul id="mainNav" dataVisible="false" class="mainNav">
+          <li class="active">
+            <a href="#home"><span aria-hidden="true">00</span>HOME</a>
+          </li>
+          <li>
+            <a href="#projects"><span aria-hidden="true">01</span>PROJECTS</a>
+          </li>
+          <li>
+            <a href="#about"><span aria-hidden="true">02</span>ABOUT</a>
+          </li>
+          <li>
+            <a href="#contact"><span aria-hidden="true">03</span>CONTACT</a>
+          </li>
+          <div class="underline"></div>
+        </ul>
       </div>
-    </header>
+    </nav>
+    <section class="content">
+      <header>
+        <h3>Hey, je m'apelle Hugo</h3>
+        <h1>Je crée des sites et applications web</h1>
+      </header>
+    </section>
   </body>
 </html>
