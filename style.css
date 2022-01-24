@@ -127,7 +127,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 35em) {
+@media (max-width: 42em) {
   .mainNav {
     position: fixed;
     z-index: 1000;
@@ -178,7 +178,7 @@ body {
   }
 }
 
-@media (min-width: 35em) and (max-width: 55em) {
+@media (min-width: 42em) and (max-width: 55em) {
   .mainNav a > span[aria-hidden] {
     display: none;
   }
@@ -187,7 +187,7 @@ body {
   }
 }
 
-@media (min-width: 35em) {
+@media (min-width: 42em) {
   .mainNav {
     padding-block: 1.5rem;
     padding-inline: clamp(3rem, 10vh, 10rem);
@@ -199,4 +199,25 @@ body {
 
 header {
   color: rgb(236, 236, 236);
+}
+
+.content {
+  margin: 10%;
+}
+
+.content header {
+  max-width: 80%;
+}
+
+.content header h3 {
+  text-transform: uppercase;
+  color: #008ed7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+
+.content header h1 {
+  margin: ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
 }
