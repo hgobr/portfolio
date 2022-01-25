@@ -26,18 +26,22 @@ body {
   border: 0;
 }
 
-/* nav */
+/*---------- nav ----------*/
 
 .wrapNav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   user-select: none;
+  top: 1rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+/* nav {
   position: sticky;
   top: 1rem;
-  margin-top: 1rem;
-  margin-left: 2rem;
-}
+} */
 
 .wrapLogo {
   display: flex;
@@ -195,19 +199,20 @@ body {
   }
 }
 
-/* @header */
+/*---------- header ----------*/
 
 header {
   color: rgb(236, 236, 236);
 }
 
 .content {
-  margin: 10%;
+  margin: 0 15%;
+  margin-top: 8rem;
 }
 
-.content header {
+/* .content header {
   max-width: 80%;
-}
+} */
 
 .content header h3 {
   text-transform: uppercase;
@@ -218,5 +223,47 @@ header {
 
 .content header h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  color: rgb(255, 255, 255);
+}
+
+.content header p {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.content header a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  outline: none;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration-color: rgb(236, 236, 236);
+}
+
+.content header a::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.content header a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.content header a::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #008ed7;
+  z-index: -1;
+  transition: transform 0.3s ease;
 }
