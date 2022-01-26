@@ -38,11 +38,6 @@ body {
   margin-left: 3rem;
 }
 
-/* nav {
-  position: sticky;
-  top: 1rem;
-} */
-
 .wrapLogo {
   display: flex;
   align-items: center;
@@ -69,7 +64,6 @@ body {
 }
 
 .logo {
-  /* margin: 2rem; */
   margin-right: 0.5rem;
   height: 2.5rem;
 }
@@ -131,7 +125,12 @@ body {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 42em) {
+@media (max-width: 43rem) {
+  .wrapNav {
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+  }
+
   .mainNav {
     position: fixed;
     z-index: 1000;
@@ -165,8 +164,8 @@ body {
     border: 0;
     width: 2rem;
     aspect-ratio: 1;
-    top: 3rem;
-    right: 3rem;
+    top: 2.5rem;
+    right: 2rem;
   }
 
   .mobileNavButton[aria-expanded='true'] {
@@ -180,18 +179,9 @@ body {
   .textLogo {
     display: none;
   }
-
-  .content {
-    margin: 0 10%;
-    margin-top: 5rem;
-  }
-
-  .content header h1 {
-    font-size: 1rem;
-  }
 }
 
-@media (min-width: 42em) and (max-width: 55em) {
+@media (min-width: 43em) and (max-width: 55em) {
   .mainNav a > span[aria-hidden] {
     display: none;
   }
@@ -200,7 +190,7 @@ body {
   }
 }
 
-@media (min-width: 42em) {
+@media (min-width: 43em) {
   .mainNav {
     padding-block: 1.5rem;
     padding-inline: clamp(3rem, 10vh, 10rem);
@@ -223,7 +213,7 @@ header {
   text-transform: uppercase;
   color: #008ed7;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .content header h1 {
@@ -234,7 +224,7 @@ header {
 }
 
 .content header p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
@@ -272,4 +262,27 @@ header {
   background: #008ed7;
   z-index: -1;
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 43rem) {
+  .content {
+    margin: 0 10%;
+    margin-top: 5rem;
+  }
+
+  .content header h1 {
+    font-size: 2rem;
+  }
+
+  .content header h3 {
+    font-size: 1rem;
+  }
+
+  .content header p {
+    font-size: 1rem;
+  }
+
+  .content header a {
+    font-size: 1rem;
+  }
 }
