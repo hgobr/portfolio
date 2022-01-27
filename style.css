@@ -264,7 +264,7 @@ header {
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 43rem) {
+@media (max-width: 43em) {
   .content {
     margin: 0 10%;
     margin-top: 5rem;
@@ -283,6 +283,58 @@ header {
   }
 
   .content header a {
+    font-size: 1rem;
+  }
+}
+
+/*---------- projets ----------*/
+
+.projects {
+  margin: 0 15%;
+  margin-top: 8rem;
+}
+
+.projects h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.project {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  width: 300px;
+  height: 300px;
+  background-image: url(./medias/portfolio01.jpg);
+  background-size: cover;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgb(0, 0, 0) 5px 5px 5px 0px,
+    rgb(0, 0, 0) 4px 4px 15px 0px inset, 2px 0px 15px -14px rgba(0, 0, 0, 0);
+  box-shadow: rgb(0, 0, 0) 5px 5px 5px 0px, rgb(0, 0, 0) 4px 4px 15px 0px inset,
+    2px 0px 15px -14px rgba(0, 0, 0, 0);
+}
+
+.project h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project p {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+@media (max-width: 43em) {
+  .projects {
+    margin: 0 10%;
+    margin-top: 4rem;
+  }
+
+  .projects h1 {
     font-size: 1rem;
   }
 }
