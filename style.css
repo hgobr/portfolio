@@ -5,13 +5,8 @@
   font-family: 'Oswald', sans-serif;
 }
 
-html {
-  min-height: 100%;
-}
-
 body {
   background-color: #0e141b;
-  height: 200vh;
 }
 
 .sr-only {
@@ -287,7 +282,7 @@ header {
   }
 }
 
-/*---------- projects ----------*/
+/*---------- projects section ----------*/
 
 .wrapProjects {
   display: flex;
@@ -313,6 +308,7 @@ header {
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
   margin-top: 2rem;
+  user-select: none;
 }
 
 .projectImage {
@@ -369,11 +365,11 @@ header {
 
 .buttonProjects {
   position: relative;
-  top: 1.5rem;
-  left: 80%;
+  text-align: right;
+  top: 2rem;
 }
 
-.projects a {
+.buttonProjects a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   outline: none;
@@ -384,17 +380,17 @@ header {
   padding: 1px;
 }
 
-.projects a::before {
+.buttonProjects a::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
 
-.projects a:hover::before {
+.buttonProjects a:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.projects a::before {
+.buttonProjects a::before {
   content: ' ';
   display: block;
   position: absolute;
@@ -435,6 +431,15 @@ header {
     width: 130px;
   }
 
+  .projectOverlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .projectOverlay > * {
+    transform: translateY(0px);
+  }
+
   .projectTitle {
     font-size: 1rem;
   }
@@ -458,4 +463,11 @@ header {
   .projectImage {
     width: 230px;
   }
+}
+
+/*---------- footer ----------*/
+
+footer {
+  border-top: 1px solid #008fd736;
+  margin-top: 5rem;
 }

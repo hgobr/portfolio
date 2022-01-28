@@ -15,6 +15,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="nav.js" defer></script>
     <script src="script.js"></script>
@@ -63,7 +70,11 @@
     <section class="projects">
       <h1>Aperçu des projets</h1>
       <div class="wrapProjects">
-        <div class="project">
+        <a
+          class="project"
+          href="https://github.com/hgobr/portfolio"
+          target="_blank"
+        >
           <img
             class="projectImage"
             src="./medias/portfolio02.jpg"
@@ -75,8 +86,12 @@
               Site "portfolio" développé en HTML5, CSS3, JavaScript
             </p>
           </div>
-        </div>
-        <div class="project">
+        </a>
+        <a
+          class="project"
+          href="https://github.com/hgobr/BlogJS"
+          target="_blank"
+        >
           <img
             class="projectImage"
             src="./medias/arcade01.jpg"
@@ -88,8 +103,12 @@
               Projet de blog en JavaScript utilisant une db avec Json server
             </p>
           </div>
-        </div>
-        <div class="project">
+        </a>
+        <a
+          class="project"
+          href="https://github.com/hgobr/CrudJS"
+          target="_blank"
+        >
           <img class="projectImage" src="./medias/sky01.jpg" alt="portfolio" />
           <div class="projectOverlay">
             <div class="projectTitle">CrudJS</div>
@@ -97,8 +116,12 @@
               Projet CRUD en JavaScript utilisant Express.js et MongoDB
             </p>
           </div>
-        </div>
-        <div class="project">
+        </a>
+        <a
+          class="project"
+          href="https://github.com/hgobr/TodoListApp"
+          target="_blank"
+        >
           <img
             class="projectImage"
             src="./medias/train01.jpg"
@@ -110,9 +133,21 @@
               Projet d'application web To-do list en HTML5, CSS3, JavaScript
             </p>
           </div>
+        </a>
+      </div>
+      <div class="buttonProjects">
+        <a href="#projects"
+          >Voir tout <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapFooter">
+        <div class="date">
+          <h4>2022</h4>
+          <p>Hugo Brothier</p>
         </div>
       </div>
-      <div class="buttonProjects"><a href="#projects">Voir tout >></a></div>
-    </section>
+    </footer>
   </body>
 </html>
