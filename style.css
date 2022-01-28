@@ -205,7 +205,7 @@ header {
 }
 
 .content {
-  margin: 0 15%;
+  margin: 0 20%;
   margin-top: 8rem;
 }
 
@@ -266,7 +266,7 @@ header {
 
 @media (max-width: 43em) {
   .content {
-    margin: 0 10%;
+    margin: 0 8%;
     margin-top: 5rem;
   }
 
@@ -297,7 +297,7 @@ header {
 }
 
 .projects {
-  margin: 0 15%;
+  margin: 0 20%;
   margin-top: 8rem;
 }
 
@@ -318,9 +318,7 @@ header {
 .projectImage {
   display: block;
   height: 300px;
-  /* width: clamp(200px, 25%, 400px); */
   width: 250px;
-
   border-radius: 10px;
   object-fit: cover;
 }
@@ -335,21 +333,31 @@ header {
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: rgb(236, 236, 236);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.projectOverlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
 }
 
 .projectOverlay:hover {
   opacity: 1;
+  cursor: pointer;
+}
+
+.projectOverlay:hover > * {
+  transform: translateY(0);
 }
 
 .projectTitle {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
@@ -359,13 +367,95 @@ header {
   width: 80%;
 }
 
+.buttonProjects {
+  position: relative;
+  top: 1.5rem;
+  left: 80%;
+}
+
+.projects a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-bottom: 1px solid #008ed7;
+  padding: 1px;
+}
+
+.projects a::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.projects a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.projects a::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #008ed7;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
 @media (max-width: 43em) {
+  .projects h1 {
+    margin-bottom: 1rem;
+  }
+
+  .wrapProjects {
+    gap: 1rem;
+  }
+
   .projects {
-    margin: 0 10%;
+    margin: 0 8%;
     margin-top: 4rem;
   }
 
   .projects h1 {
     font-size: 1rem;
+  }
+
+  .project {
+    margin-top: 1rem;
+  }
+
+  .projectImage {
+    height: 170px;
+    width: 130px;
+  }
+
+  .projectTitle {
+    font-size: 1rem;
+  }
+
+  .projectDescription {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 43em) and (max-width: 55em) {
+  .wrapProjects {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 349px) {
+  .wrapProjects {
+    justify-content: center;
+  }
+
+  .projectImage {
+    width: 230px;
   }
 }
