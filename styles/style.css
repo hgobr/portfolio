@@ -146,7 +146,7 @@ body {
     position: absolute;
     z-index: 9999;
 
-    background: url('./medias/burger_outline_128.png');
+    background: url('../medias/burger_outline_128.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -161,7 +161,7 @@ body {
   }
 
   .mobileNavButton[aria-expanded='true'] {
-    background-image: url(./medias/cross_128px.png);
+    background-image: url(../medias/cross_128px.png);
   }
 
   .wrapLogo {
@@ -221,7 +221,7 @@ header {
   margin-bottom: 1rem;
 }
 
-.content header a {
+.underlineLink {
   color: rgb(255, 255, 255);
   text-decoration: none;
   outline: none;
@@ -232,17 +232,17 @@ header {
   padding: 1px;
 }
 
-.content header a::before {
+.underlineLink::before {
   transform: scaleX(0);
   transform-origin: bottom right;
 }
 
-.content header a:hover::before {
+.underlineLink:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.content header a::before {
+.underlineLink::before {
   content: ' ';
   display: block;
   position: absolute;
@@ -279,16 +279,33 @@ header {
   }
 }
 
+.wrapContact {
+  display: flex;
+  flex-direction: column;
+
+  margin: 4rem;
+  gap: 2rem;
+}
+
+.wrapMail,
+.wrapLinkedin,
+.wrapGithub {
+  display: flex;
+  position: relative;
+  left: 150px;
+}
+
 .label {
   padding: 10px;
   font-size: 18px;
   color: white;
+  position: relative;
+  right: 300px;
 }
 
 .copyText {
-  position: relative;
   padding: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: #0e141b;
 
   border: 1px solid #008ed7;
   border-radius: 5px;
@@ -298,10 +315,10 @@ header {
 .copyText input.text {
   padding: 5px;
   font-size: 1rem;
-  color: black;
-  font-weight: bold;
+  color: rgb(255, 255, 255);
   border: none;
   outline: none;
+  background-color: #0e141b;
 }
 
 .copyText button {
@@ -315,31 +332,16 @@ header {
   cursor: pointer;
 }
 
-.copyText button:active {
+.copyText button a {
+  color: inherit;
+}
+
+.copyBtn:active {
   background: #008fd79c;
 }
 
-.copyText button::before {
-  content: 'Copié';
-  position: absolute;
-  top: -55px;
-  right: 0px;
-  background: #008ed7;
-  padding: 8px 8px;
-  border-radius: 10px;
-  display: none;
-}
-
-.copyText button::after {
-  content: '';
-  position: absolute;
-  top: -20px;
-  right: 18px;
-  width: 10px;
-  height: 10px;
-  background: #008ed7;
-  transform: rotate(45deg);
-  display: none;
+.copyText button:active {
+  background: #008fd79c;
 }
 
 .copyText.active button::before,
@@ -348,17 +350,20 @@ header {
 }
 
 /*---------- projects section ----------*/
+.projects {
+  margin: 0 20%;
+  margin-top: 8rem;
+}
+
+.projectsPage {
+  margin-top: 4rem;
+}
 
 .wrapProjects {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
-}
-
-.projects {
-  margin: 0 20%;
-  margin-top: 8rem;
 }
 
 .projects h1 {
@@ -512,6 +517,26 @@ header {
   .projectDescription {
     font-size: 0.8rem;
   }
+
+  .label {
+    display: none;
+  }
+
+  .wrapContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 4rem;
+    gap: 4rem;
+  }
+
+  .wrapMail,
+  .wrapLinkedin,
+  .wrapGithub {
+    left: 0;
+  }
 }
 
 @media (min-width: 43em) and (max-width: 55em) {
@@ -535,6 +560,12 @@ header {
 footer {
   border-top: 1px solid #008fd736;
   margin-top: 5rem;
+}
+
+.contactFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .wrapFooter {
@@ -586,7 +617,7 @@ footer {
 .itemLogo {
   width: 40px;
   height: 40px;
-  background-image: url(./medias/hbicon01.png);
+  background-image: url(../medias/hbicon01.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -605,7 +636,7 @@ footer {
 .linkedin {
   width: 30px;
   height: 30px;
-  background-image: url(./medias/linkedin01.png);
+  background-image: url(../medias/linkedin01.png);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
@@ -614,7 +645,7 @@ footer {
 .github {
   width: 30px;
   height: 30px;
-  background-image: url(./medias/github01.png);
+  background-image: url(../medias/github01.png);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;

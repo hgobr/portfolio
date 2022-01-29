@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="medias/hbicon01.png" type="image/png" />
+    <link rel="icon" href="../medias/hbicon01.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,9 +22,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="nav.js" defer></script>
-    <script src="script.js" async></script>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../js/nav.js" defer></script>
+    <script src="../js/script.js" async></script>
     <title>Hugo Brothier</title>
   </head>
 
@@ -32,7 +32,7 @@
     <nav>
       <div class="wrapNav">
         <a href="index.html" class="wrapLogo">
-          <img src="./medias/hbicon01.png" alt="logo" class="logo" />
+          <img src="../medias/hbicon01.png" alt="logo" class="logo" />
           <div class="textLogo">HUGO BROTHIER</div>
         </a>
         <button
@@ -44,13 +44,17 @@
         </button>
         <ul id="mainNav" dataVisible="false" class="mainNav">
           <li class="active">
-            <a href="index.html"><span aria-hidden="true">00</span>HOME</a>
+            <a class="homeActive" href="index.html"
+              ><span aria-hidden="true">00</span>HOME</a
+            >
           </li>
           <li>
-            <a href="#projects"><span aria-hidden="true">01</span>PROJECTS</a>
+            <a href="projects.html"
+              ><span aria-hidden="true">01</span>PROJECTS</a
+            >
           </li>
           <li>
-            <a href="#about"><span aria-hidden="true">02</span>ABOUT</a>
+            <a href="about.html"><span aria-hidden="true">02</span>ABOUT</a>
           </li>
           <li>
             <a href="contact.html"><span aria-hidden="true">03</span>CONTACT</a>
@@ -64,7 +68,7 @@
         <h3>Hey, je m'apelle Hugo</h3>
         <h1>Je crée des sites et applications web</h1>
         <p>Je suis un développeur web front-end et back-end basé sur Paris</p>
-        <a href="contact.html">Contact</a>
+        <a class="underlineLink" href="contact.html">Contact</a>
       </header>
     </section>
     <section class="projects">
@@ -77,7 +81,7 @@
         >
           <img
             class="projectImage"
-            src="./medias/portfolio02.jpg"
+            src="../medias/portfolio02.jpg"
             alt="portfolio"
           />
           <div class="projectOverlay">
@@ -92,11 +96,7 @@
           href="https://github.com/hgobr/BlogJS"
           target="_blank"
         >
-          <img
-            class="projectImage"
-            src="./medias/arcade01.jpg"
-            alt="portfolio"
-          />
+          <img class="projectImage" src="../medias/arcade01.jpg" alt="BlogJS" />
           <div class="projectOverlay">
             <div class="projectTitle">BlogJS</div>
             <p class="projectDescription">
@@ -109,7 +109,7 @@
           href="https://github.com/hgobr/CrudJS"
           target="_blank"
         >
-          <img class="projectImage" src="./medias/sky01.jpg" alt="portfolio" />
+          <img class="projectImage" src="../medias/sky01.jpg" alt="CrudJS" />
           <div class="projectOverlay">
             <div class="projectTitle">CrudJS</div>
             <p class="projectDescription">
@@ -124,8 +124,8 @@
         >
           <img
             class="projectImage"
-            src="./medias/train01.jpg"
-            alt="portfolio"
+            src="../medias/train01.jpg"
+            alt="TodoListApp"
           />
           <div class="projectOverlay">
             <div class="projectTitle">TodoListApp</div>
@@ -136,7 +136,7 @@
         </a>
       </div>
       <div class="buttonProjects">
-        <a href="#projects"
+        <a class="underlineLink" href="projects.html"
           >Voir tout <i class="fas fa-angle-double-right"></i
         ></a>
       </div>
