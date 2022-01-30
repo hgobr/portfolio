@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../medias/hbicon01.png" type="image/png" />
+    <link rel="icon" href="./medias/hbicon01.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,17 +22,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <script src="../js/nav.js" defer></script>
-    <script src="../js/script.js" async></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/script.js" async></script>
     <title>Hugo Brothier</title>
   </head>
 
   <body class="home">
     <nav>
       <div class="wrapNav">
-        <a href="../index.html" class="wrapLogo">
-          <img src="../medias/hbicon01.png" alt="logo" class="logo" />
+        <a href="index.html" class="wrapLogo">
+          <img src="./medias/hbicon01.png" alt="logo" class="logo" />
           <div class="textLogo">HUGO BROTHIER</div>
         </a>
         <button
@@ -44,9 +49,7 @@
         </button>
         <ul id="mainNav" dataVisible="false" class="mainNav">
           <li class="active">
-            <a class="homeActive" href="../index.html"
-              ><span aria-hidden="true">00</span>HOME</a
-            >
+            <a href="index.html"><span aria-hidden="true">00</span>HOME</a>
           </li>
           <li>
             <a href="projects.html"
@@ -65,28 +68,62 @@
     </nav>
     <section class="content">
       <header>
-        <h3>À propos</h3>
-        <h1>Dev front/back JavaScript</h1>
-        <div class="wrapAbout">
-          <p>
-            Je suis un développeur web
-            <span class="underlineLink">front-end</span> et
-            <span class="underlineLink">back-end</span> habitant en région
-            parisienne qui s'est découvert une passion pour la création et
-            l'intégration web, avec une préférence pour le développement front
-            et <span class="underlineLink"> l'UX</span>,
-            <span class="underlineLink">UI</span>. Le
-            <span class="underlineLink">JavaScript</span> est le langage de
-            programmation que j'utilise principalement dans mon environnement de
-            travail et aussi celui que je préfère.
-          </p>
-          <img src="../medias/aboutImg01.jpg" alt="aboutImg" class="aboutImg" />
-        </div>
+        <h3>Contact</h3>
+        <h1>Hugo Brothier, développeur web</h1>
+        <p><i class="fas fa-location-arrow"></i> Paris, France</p>
       </header>
+      <div class="wrapContact">
+        <div class="wrapMail">
+          <div class="copyText">
+            <input type="text" class="text" value="hugo.brothier@hotmail.fr" />
+            <button class="copyBtn"><i class="far fa-copy"></i></button>
+          </div>
+          <div class="label">
+            <a class="underlineLink linkBtn" href="#">Mail</a>
+          </div>
+        </div>
+        <div class="wrapLinkedin">
+          <div class="copyText">
+            <input
+              type="text"
+              class="text"
+              value="https://www.linkedin.com/in/hugo-brothier/"
+            />
+            <button>
+              <a
+                href="https://www.linkedin.com/in/hugo-brothier/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </button>
+          </div>
+          <div class="label">
+            <a
+              class="underlineLink"
+              href="https://www.linkedin.com/in/hugo-brothier/"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <div class="wrapGithub">
+          <div class="copyText">
+            <input type="text" class="text" value="https://github.com/hgobr" />
+            <button>
+              <a href="https://github.com/hgobr" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </button>
+          </div>
+          <div class="label">
+            <a class="underlineLink" href="https://github.com/hgobr">GitHub</a>
+          </div>
+        </div>
+      </div>
     </section>
+
     <footer>
       <div class="wrapFooter">
-        <a href="../index.html" class="footerItem date">
+        <a href="index.html" class="footerItem date">
           <div class="itemLogo"></div>
           <div class="itemText">
             <h4><i class="far fa-copyright"></i> 2022</h4>
