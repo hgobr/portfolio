@@ -221,6 +221,20 @@ header {
   margin-bottom: 1rem;
 }
 
+.wrapAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.aboutImg {
+  width: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 2rem;
+}
+
 .underlineLink {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -256,6 +270,16 @@ header {
   transition: transform 0.3s ease;
 }
 
+@media (max-width: 1200px) {
+  .wrapAbout {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .aboutImg {
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 43em) {
   .content {
     margin: 0 8%;
@@ -276,6 +300,12 @@ header {
 
   .content header a {
     font-size: 1rem;
+  }
+
+  .aboutImg {
+    width: 300px;
+    margin-left: 0;
+    margin-top: 1rem;
   }
 }
 
@@ -562,7 +592,7 @@ footer {
   margin-top: 5rem;
 }
 
-.contactFooter {
+.absoluteFooter {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -652,6 +682,10 @@ footer {
 }
 
 @media (max-width: 43em) {
+  footer {
+    margin-top: 4rem;
+  }
+
   .wrapFooter {
     margin: 0 8%;
   }
