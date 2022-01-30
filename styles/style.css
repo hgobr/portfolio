@@ -217,6 +217,10 @@ header {
   color: rgb(255, 255, 255);
 }
 
+.content .aboutH1 {
+  color: #c5c9ca;
+}
+
 .content header p {
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -227,7 +231,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .aboutImg {
@@ -314,7 +319,6 @@ header {
 .wrapContact {
   display: flex;
   flex-direction: column;
-
   margin: 4rem;
   gap: 2rem;
 }
@@ -382,13 +386,16 @@ header {
 }
 
 /*---------- projects section ----------*/
+
 .projects {
   margin: 0 20%;
   margin-top: 8rem;
+  padding-bottom: 15rem;
 }
 
 .projectsPage {
   margin-top: 4rem;
+  padding-bottom: 10rem;
 }
 
 .wrapProjects {
@@ -506,6 +513,26 @@ header {
   transition: transform 0.3s ease;
 }
 
+.purple {
+  color: #a56fff;
+}
+
+.yellow {
+  color: #d5b012;
+}
+
+.blue {
+  color: #20c1d8;
+}
+
+.red {
+  color: #c16266;
+}
+
+.green {
+  color: #90b061;
+}
+
 @media (max-width: 43em) {
   .projects h1 {
     margin-bottom: 1rem;
@@ -555,13 +582,10 @@ header {
   }
 
   .wrapContact {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem;
     margin-top: 4rem;
-    margin-bottom: 10rem;
     gap: 4rem;
   }
 
@@ -595,6 +619,7 @@ footer {
   bottom: 0;
   width: 100%;
   border-top: 1px solid #008fd736;
+  margin-top: 5rem;
 }
 
 .wrapFooter {
