@@ -8,6 +8,8 @@
 body {
   background-color: #0e141b;
   user-select: none;
+  position: relative;
+  min-height: 100vh;
 }
 
 .sr-only {
@@ -559,6 +561,7 @@ header {
     align-items: center;
     margin: 1rem;
     margin-top: 4rem;
+    margin-bottom: 10rem;
     gap: 4rem;
   }
 
@@ -588,21 +591,16 @@ header {
 /*---------- footer ----------*/
 
 footer {
-  border-top: 1px solid #008fd736;
-  margin-top: 5rem;
-}
-
-.absoluteFooter {
   position: absolute;
   bottom: 0;
   width: 100%;
+  border-top: 1px solid #008fd736;
 }
 
 .wrapFooter {
   margin: 0 20%;
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
 }
 
 .footerItem {
