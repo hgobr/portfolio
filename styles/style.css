@@ -78,6 +78,7 @@ body {
 @supports (backdrop-filter: blur(0.5rem)) {
   .mainNav {
     backdrop-filter: blur(0.5rem);
+    background: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -132,11 +133,16 @@ body {
     inset: 0 0 0 30%;
     flex-direction: column;
     padding: min(30vh, 10rem) 2rem;
-    background: rgba(0, 0, 0, 0.219);
-    backdrop-filter: blur(1rem);
-
+    background: rgba(0, 0, 0, 0.9);
     transform: translateX(100%);
     transition: transform 350ms ease-out;
+  }
+
+  @supports (backdrop-filter: blur(1rem)) {
+    .mainNav {
+      backdrop-filter: blur(1rem);
+      background: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .mainNav[dataVisible='true'] {
