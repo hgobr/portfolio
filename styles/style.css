@@ -203,6 +203,10 @@ header {
   margin-top: 8rem;
 }
 
+.contactContent {
+  margin-bottom: 10rem;
+}
+
 .content header h3 {
   text-transform: uppercase;
   color: #008ed7;
@@ -218,7 +222,7 @@ header {
 }
 
 .content .aboutH1 {
-  color: #c5c9ca;
+  color: #9da39d;
 }
 
 .content header p {
@@ -291,6 +295,10 @@ header {
   .content {
     margin: 0 8%;
     margin-top: 5rem;
+  }
+
+  .contactContent {
+    margin-bottom: 10rem;
   }
 
   .content header h1 {
