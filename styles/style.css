@@ -404,7 +404,7 @@ header {
 .projects {
   margin: 0 20%;
   margin-top: 8rem;
-  padding-bottom: 15rem;
+  padding-bottom: 13rem;
 }
 
 .projectsPage {
@@ -633,7 +633,6 @@ footer {
   bottom: 0;
   width: 100%;
   border-top: 1px solid #008fd736;
-  margin-top: 5rem;
 }
 
 .wrapFooter {
