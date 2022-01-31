@@ -9,7 +9,7 @@ body {
   background-color: #0e141b;
   user-select: none;
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .sr-only {
@@ -242,7 +242,6 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  padding-bottom: 10rem;
 }
 
 .aboutImg {
@@ -404,12 +403,10 @@ header {
 .projects {
   margin: 0 20%;
   margin-top: 8rem;
-  padding-bottom: 13rem;
 }
 
 .projectsPage {
   margin-top: 4rem;
-  padding-bottom: 10rem;
 }
 
 .wrapProjects {
@@ -629,8 +626,9 @@ header {
 /*---------- footer ----------*/
 
 footer {
-  position: absolute;
-  bottom: 0;
+  clear: both;
+  position: relative;
+  bottom: -100px;
   width: 100%;
   border-top: 1px solid #008fd736;
 }
