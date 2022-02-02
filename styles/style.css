@@ -32,7 +32,7 @@ body {
   width: 100%;
   bottom: 0;
   z-index: 101;
-  background-color: #0b0f14;
+  background-color: #090d11;
   pointer-events: none;
   transition: 0.5s ease-out;
 }
@@ -48,7 +48,7 @@ body {
   width: 100%;
   bottom: 0;
   z-index: 101;
-  background-color: #0b0f14;
+  background-color: #090d11;
   pointer-events: none;
   transition: 0.5s ease-out;
 }
@@ -64,7 +64,7 @@ body {
   right: 0;
   height: 100%;
   z-index: 101;
-  background-color: #0b0f14;
+  background-color: #090d11;
   pointer-events: none;
   transition: 0.5s ease-out;
 }
@@ -80,7 +80,7 @@ body {
   right: 0;
   height: 100%;
   z-index: 101;
-  background-color: #0b0f14;
+  background-color: #090d11;
   pointer-events: none;
   transition: 0.5s ease-out;
 }
