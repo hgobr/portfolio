@@ -6,7 +6,7 @@ window.onload = () => {
 
   setTimeout(() => {
     transition.classList.remove('isActive');
-  }, 250);
+  }, 500);
 
   for (let i = 0; i < anchors.length; i++) {
     const anchor = anchors[i];
