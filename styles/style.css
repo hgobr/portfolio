@@ -23,6 +23,72 @@ body {
   border: 0;
 }
 
+/*---------- transitions ----------*/
+
+.transition1 {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  bottom: 0;
+  z-index: 101;
+  background-color: #008ed7;
+  pointer-events: none;
+  transition: 0.5s ease-out;
+}
+
+.transition1.isActive {
+  right: 0;
+}
+
+.transition2 {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  z-index: 101;
+  background-color: #008ed7;
+  pointer-events: none;
+  transition: 0.5s ease-out;
+}
+
+.transition2.isActive {
+  left: 0;
+}
+
+.transition3 {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 101;
+  background-color: #008ed7;
+  pointer-events: none;
+  transition: 0.5s ease-out;
+}
+
+.transition3.isActive {
+  top: 0;
+}
+
+.transition4 {
+  position: fixed;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 101;
+  background-color: #008ed7;
+  pointer-events: none;
+  transition: 0.5s ease-out;
+}
+
+.transition4.isActive {
+  bottom: 0;
+}
+
 /*---------- nav ----------*/
 
 .wrapNav {
