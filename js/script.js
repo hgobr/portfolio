@@ -6,14 +6,14 @@ window.onload = () => {
 
   setTimeout(() => {
     transition.classList.remove('isActive');
-  }, 500);
+  }, 250);
 
   for (let i = 0; i < anchors.length; i++) {
     const anchor = anchors[i];
 
     anchor.addEventListener('click', (e) => {
       e.preventDefault();
-      let target = e.target.href;
+      let target = e.currentTarget;
 
       transition.classList.add('isActive');
 
