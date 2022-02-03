@@ -17,7 +17,7 @@ window.onload = () => {
 
       transition.classList.add('isActive');
 
-      setTimeout(() => {
+      setInterval(() => {
         window.location.href = target;
       }, 500);
     });
