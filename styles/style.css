@@ -31,7 +31,7 @@ body {
   right: -100%;
   width: 100%;
   bottom: 0;
-  z-index: 101;
+  z-index: 9999;
   background-color: #090d11;
   pointer-events: none;
   transition: 0.5s ease-out;
@@ -47,7 +47,7 @@ body {
   left: -100%;
   width: 100%;
   bottom: 0;
-  z-index: 101;
+  z-index: 9999;
   background-color: #090d11;
   pointer-events: none;
   transition: 0.5s ease-out;
@@ -63,7 +63,7 @@ body {
   left: 0;
   right: 0;
   height: 100%;
-  z-index: 101;
+  z-index: 9999;
   background-color: #090d11;
   pointer-events: none;
   transition: 0.5s ease-out;
@@ -79,7 +79,7 @@ body {
   left: 0;
   right: 0;
   height: 100%;
-  z-index: 101;
+  z-index: 9999;
   background-color: #090d11;
   pointer-events: none;
   transition: 0.5s ease-out;
@@ -96,7 +96,7 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 101;
+    z-index: 9999;
     background-color: #0e141b;
     opacity: 0;
     pointer-events: none;
@@ -236,7 +236,7 @@ body {
   .mobileNavButton {
     display: block;
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
 
     background: url('../medias/burger_outline_128.png');
     background-repeat: no-repeat;
