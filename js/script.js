@@ -13,7 +13,7 @@ window.onload = () => {
 
     anchor.addEventListener('click', (e) => {
       e.preventDefault();
-      let target = e.currentTarget;
+      let target = e.currentTarget.href;
 
       transition.classList.add('isActive');
 
