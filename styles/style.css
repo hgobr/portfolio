@@ -89,7 +89,7 @@ body {
   bottom: 0;
 }
 
-@media (max-width: 43em) {
+/* @media (max-width: 43em) {
   .transition {
     position: fixed;
     top: 0;
@@ -107,7 +107,7 @@ body {
     opacity: 1;
     pointer-events: all;
   }
-}
+} */
 
 /*---------- nav ----------*/
 
