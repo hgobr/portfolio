@@ -11,6 +11,10 @@ body {
   min-height: 100%;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
