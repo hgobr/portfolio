@@ -11,6 +11,8 @@ body {
   min-height: 100%;
 }
 
+/** hide scrollbar */
+
 body::-webkit-scrollbar {
   display: none;
 }
