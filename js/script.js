@@ -40,7 +40,7 @@ navButton.addEventListener('click', () => {
   }
 });
 
-//---------- notifications ----------
+//*---------- notifications ----------
 
 const notyf = new Notyf({
   duration: 2000,
